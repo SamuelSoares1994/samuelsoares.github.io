@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sr.Ouriques Barbearia</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/locales-all.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <style>
+        #logo1 {
+            max-width: 85px;
+            height: auto;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        #logo2 {
+            max-width: 85px;
+            height: auto;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+    </style>
+    
+</head>
+    
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="Imagens/Logo5.jpeg" alt="Logo Sr.Ouriques Barbearia" id="logo1">
+            <img src="Imagens/Logo5.jpeg" alt="Logo Sr.Ouriques Barbearia" id="logo2">
+
+            <h1 id="TítuloPrincipal" class="burn">Sr.Ouriques Barbearia</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#horarios">Horários</a></li>
+                    <li id="Contato"><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="intro-text">
+            <h2 id="Subtitulo">Bem-vindo à Sr.Ouriques Barbearia</h2>
+            <p id="Descrição">Sua experiência de barbearia premium na cidade.</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="slider">
+            <div><img src="Imagens/Barber1.jpeg" alt="Imagem 1"></div>
+            <div><img src="Imagens/Barber2.jpeg" alt="Imagem 1"></div>
+            <div><img src="Imagens/Barber5.jpeg" alt="Imagem 1"></div>
+            <div><img src="Imagens/Barber8.jpeg" alt="Imagem 1"></div>
+            <div><img src="Imagens/Barber9.jpeg" alt="Imagem 1"></div>
+            <div><img src="Imagens/Barber11.jpeg" alt="Imagem 1"></div>
+            <div><img src="Imagens/Barber12.jpeg" alt="Imagem 1"></div>
+            <div><img src="Imagens/Barber14.jpeg" alt="Imagem 1"></div>
+            <div><img src="Imagens/Barber15.jpeg" alt="Imagem 1"></div>
+        </div>
+    </section>
+
+    <section id="horarios" class="scroll-target">
+        <h2>Horários de Atendimento</h2>
+        <p>Confira nossos horários disponíveis para agendamento:</p>
+
+        <ul>
+            <li><strong>Segunda-feira:</strong> 14:00 - 20:00</li>
+            <li><strong>Terça-feira:</strong> 9:00 - 12:00 / 14:00 - 20:00</li>
+            <li><strong>Quarta-feira:</strong> 9:00 - 12:00 / 14:00 - 20:00</li>
+            <li><strong>Quinta-feira:</strong> 9:00 - 12:00 / 14:00 - 20:00</li>
+            <li><strong>Sexta-feira:</strong> 9:00 - 12:00 / 14:00 - 20:00</li>
+            <li><strong>Sábado:</strong> 9:00 - 12:00 / 14:00 - 17:00</li>
+            <li><strong>Domingo:</strong> Fechado</li>
+        </ul>
+    </section>
+
+    <section id="contato">
+        <div class="contact-section">
+            <h2>Entre em Contato</h2>
+            <p>Celular: (48) 92000-3225</p>
+            <p>Ou clique no link abaixo:</p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/5548920003225" target="_blank" class="contato-link">(48) 92000-3225 (Clique para enviar mensagem no WhatsApp)</a></p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/sr.ouriquesbarbearia/" target="_blank" class="contato-link">instagram.com/sr.ouriquesbarbearia/ (Clique para acesso ao instagram)</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p id="copyright">&copy; 2024 Sr.Ouriques Barbearia. Todos os direitos reservados.</p>
+    </footer>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').slick({
+                slidesToShow: 7,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1750,
+                dots: true
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

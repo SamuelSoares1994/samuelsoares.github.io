@@ -1,0 +1,474 @@
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #252525;
+    color: #2c2c2c;
+    max-width: 2050px; /* Ajuste conforme necessário para a largura desejada */
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+    height: auto;
+    width: auto;
+    
+}
+
+header {
+    background: linear-gradient(to right, #030303, #525252);
+    color: #eeeeee;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #ffffff;
+    text-shadow: 1px 1px 2px rgba(49, 49, 49, 0.8);
+    height: auto;
+    width: auto;
+
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    
+}
+
+#TítuloPrincipal{
+    position: relative;
+}
+
+#TítuloPrincipal {
+    font-size: 3.5em;
+    text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.8);
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    animation: fadeIn 5s ease-in-out;
+    opacity: 1;
+    margin-top: -0.2em;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, #ffffff, #fafafa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: pulse 3s infinite;
+    height: auto;
+    width: auto;
+    
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+#Subtitulo {
+    font-size: 0.8cm;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1.5cm;
+    margin-left: 1cm;
+    letter-spacing: 1px;
+    opacity: 0.90;
+    text-align: left;
+    margin-top: 2.5cm;
+    height: auto;
+    width: auto;
+    
+}
+
+#Descrição {
+    font-size: larger;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    opacity: 0.8;
+    margin-left: 1cm;
+    height: auto;
+    width: auto;
+    
+    
+}
+
+#copyright {
+    text-align: center; /* Alinha o texto ao centro */
+    background-color: #333; /* Cor de fundo escura */
+    color: #ffffff; /* Cor do texto branca */
+    padding: 15px 0; /* Espaçamento interno */
+    position: auto; /* Posicionamento absoluto */
+    bottom: 0; /* Alinha ao final da página */
+    width: 100%; /* Largura total */
+    height: auto;   
+    width: auto;
+}
+
+/* Adicione as demais regras de estilo conforme necessário */
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center; /* Centraliza os itens da lista */
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+}
+
+nav li {
+    margin: 0 20px;
+    display: inline; /* Exibe os itens da lista em linha */
+    margin-right: 15px; /* Adiciona um espaçamento entre os itens da lista (ajuste conforme necessário) */
+    height: auto;
+    width: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    height: auto;
+    width: auto;
+}
+
+nav a:hover {
+    color: #f54e4e;
+    height: auto;
+    width: auto;
+}
+
+.header-content #Subtitulo {
+    color: #ffffff;
+    text-align: left;
+    font-size: 1.8em;
+    font-family: 'Courier New', Courier, monospace;
+    animation: fadeIn 2s ease-in-out;
+    font-weight: bold;
+    text-transform: none;
+    letter-spacing: normal;
+    margin-bottom: 10px;
+    opacity: 2;
+    height: auto;
+    width: auto;
+}
+
+.header-content #Descrição {
+    color: #ffffff;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    margin-top: 10px;
+    max-width: 1000px;
+    line-height: 1.5;
+    opacity: 0.8;
+    animation: fadeIn 2s ease-in-out;
+    height: auto;   
+    width: auto;
+}
+
+
+
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0; /* Ajuste esta linha conforme necessário */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px; /* Ajuste conforme necessário para a altura desejada */
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+    height: auto;
+    width: auto;
+ 
+}
+
+
+.slider {
+    max-width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    margin-top: 0cm; /* Adicione esta linha para a margem superior */
+    max-width: 100%; /* Garante que o slider não ultrapasse a largura máxima definida */
+    max-width: 100%;
+    height: 430px; /* Ajuste conforme necessário para a altura desejada */
+    overflow: hidden; /* Garante que não haverá overflow se a altura for menor que o conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+    height: auto;
+    width: auto;
+ 
+    
+    
+}
+
+.slider-container {
+    max-width: 1335px; /* Ajuste conforme necessário para a largura desejada */
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+    height: auto;
+    width: auto;
+ 
+}
+
+
+.slider img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    height: auto;
+    width: auto;
+    
+}
+
+.logo img {
+    max-height: 175px;
+    margin-right: 10px;
+    height: auto;
+    width: auto;
+}
+
+
+
+
+#contato {
+    background-color: #363636; /* Fundo escuro */
+    color: #ffffff; /* Cor do texto branca */
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    padding: 2em;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    width: auto;
+    
+    
+}
+
+#contato h2 {
+    font-size: auto; /* Tamanho padrão para leitura confortável */
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: auto;
+    
+    
+}
+
+#contato p {
+    font-size: auto; /* Tamanho padrão para leitura confortável */
+    line-height: 1.5;
+    margin-bottom: 10px;
+    width: auto;
+    
+}
+
+#contato .contato-link {
+    color: #007BFF; /* Cor azul para o link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    width: auto;
+    
+}
+
+#contato .contato-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    height: auto;
+    width: auto;
+    
+}
+
+#Contato{
+    font-size: auto; /* Tamanho padrão para leitura confortável */
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 0cm;
+    text-transform: uppercase;
+    float: left;
+    width: auto;
+    
+}
+
+
+#horarios {
+    background-color: #3b3b3b;
+    font-size: auto;
+    padding: 20px;
+    margin: 70px auto; /* Alterado para centralizar verticalmente */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    clear: both;  
+    width: auto;
+}
+
+#contato{
+    background-color: #3b3b3b;
+    font-size: x-large;
+    padding: 20px;
+    margin: 70px auto; /* Alterado para centralizar verticalmente */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    clear: both;  
+    width: auto;
+}
+
+/* Mantenha o restante do CSS para #horarios como está */
+
+
+#horarios h2 {
+    font-size: xx-large; /* Tamanho padrão para leitura confortável */
+    margin-bottom: 0.75em; /* Proporção equilibrada com o tamanho da fonte */
+    margin-bottom: 0.75em;
+    width: auto;
+   
+    
+    
+}
+
+#horarios p {
+    font-size: auto; /* Tamanho padrão para leitura confortável */
+    margin-bottom: 1.9em; /* Mais espaço entre parágrafos melhora a legibilidade */   
+    width: auto;
+    
+    
+}
+
+#horarios ul {
+    list-style: none; /* Mantém marcadores de lista ocultos */
+    padding: 0; /* Remove o espaçamento interno */
+    margin: 0; /* Remove o espaçamento externo */
+    width: auto;
+  
+   
+}
+
+#horarios li {
+    font-size: 1.7em; /* Consistente com o tamanho do texto dos parágrafos */
+    margin-bottom: 0.5em; /* Espaçamento inferior sutil para melhor legibilidade */ 
+    width: auto;
+   
+}
+
+#horarios li strong {
+    display: inline-block;
+    width: 150px; /* Mantém a largura fixa para alinhamento */
+    font-weight: bold; /* Mantém o texto em negrito */
+    margin-right: 1em; /* Adiciona espaçamento à direita para separar do texto */
+    width: auto;
+}
+
+
+
+
+#logo1{
+    max-width: 85px;
+    position: absolute;
+    top: 10px;
+    /* Adicione um pouco de sombra ou destaque */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Ou adicione bordas arredondadas */
+    border-radius: 8px;
+    height: auto;
+    width: auto;
+    
+}
+
+#logo2 {
+    max-width: 85px;
+    position: absolute;
+    top: 10px;
+    /* Adicione um pouco de sombra ou destaque */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Ou adicione bordas arredondadas */
+    border-radius: 8px;
+    height: auto;
+    width: auto;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adicione estilos específicos para telas menores aqui */
+    body {
+        font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário para telas menores */
+    }
+
+    #horarios {
+        width: 90%; /* Ajuste a largura conforme necessário para telas menores */
+        margin: 20px auto; /* Centraliza a seção na tela */
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+}
+
+nav li {
+    margin: 0 20px;
+    display: inline;
+    margin-right: 15px;
+    height: auto;
+    width: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    height: auto;
+    width: auto;
+}
+
+nav a:hover {
+    color: #f54e4e;
+    height: auto;
+    width: auto;
+}
+
